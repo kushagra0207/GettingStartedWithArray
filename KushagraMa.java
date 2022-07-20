@@ -40,6 +40,7 @@ public class KushagraMa {
         else{
             System.out.println("Again Thank You!");
         }}
+        scanner.close();
 
 
     }
