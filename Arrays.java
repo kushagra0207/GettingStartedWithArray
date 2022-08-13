@@ -1,54 +1,23 @@
-/** Getting Started with Java Arrays
-Date - 15 July 2022 by- Kushagra Gupta
-
-Arrays are Linear type data structures allocate memory in a continuous space.(Homogeneous)
-Arrays store same datatype elements.
-Arrays are used to store collections of data
-In Java Arrays are objects.
-We can find length of array by - array_name.length;
-
-*/
-
-/*
- Printing the array by user
- and initializing the array
-
- */
-
- //leetcode problem to reverse the number in an array and modified the array.
- // for e.g. 639 to 936 and so on...
-
-
-import java.util.*;
-public class Arrays{
+public class Arrays {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);// creating object of scanner class
-        System.out.println("Enter The Size of array");
-        int N = sc.nextInt();// creating the integer type variable and initializing
-        System.out.println("Enter the arrays elements :");
-        int[] arr = new int[N];//Initializing the array and creating
-        for (int i = 0; i < arr.length; i++) {
-            arr[i]=sc.nextInt();
+        /*classroom of 500 students - we have to store marks of 500 students
+        representation of the array
+        there are three ways to create the array in java
+         */
+        // first way of declaration of the array
+        int [] marks =new int[10];
+        // another way of declaring array
+        //int[] marks={100,70,80,71,98};
+        // declaration and then memory allocation
+        // int[] number;
+        //number=new int[5];
+        marks[0]=100;
+        marks[1]=60;
+        marks[2]=80;
+        marks[3]=90;
+        marks[4]=96;
+        System.out.println( marks[4]);
 
-            
-        }
-        for (int i = 0; i < arr.length; i++) {
-            int result=0;
-            int remainder =0;
 
-
-            while(arr[i]!=0){
-                remainder = arr[i]%10;
-                result = result*10 + remainder;
-                arr[i]=arr[i]/10;
-            }
-            System.out.println("Your result is at position:" + (i+1) + " " + result );
-            
-        }
-        sc.close(); 
-        
-        
-
-        
     }
 }
